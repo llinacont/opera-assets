@@ -1,0 +1,1 @@
+r.js.cmd -o require/build.js
