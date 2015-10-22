@@ -1,1 +1,1 @@
-r.js.cmd -o require/build.js
+r.js.cmd -o %~dp0/require/build.js

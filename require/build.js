@@ -7,7 +7,6 @@
         "datatables": "../js/vendor/datatables",
         "jquery.fancybox.pack": "../js/vendor/jquery.fancybox.pack",
         "jquery": "../js/vendor/jquery-1.11.1.min",
-        "tinymce": "../js/vendor/tinymce.min",
         "tinymce-config": "../js/tiny-customs",
         "seleccion-material": "../js/seleccionMaterial",
         "rating": "../js/rating"

@@ -1,4 +1,4 @@
-require(["aui", "bootstrap-datepicker", "datatables", "jquery.fancybox.pack", "jquery", "tinymce", "tinymce-config", "seleccion-material"], function ($) {
+require(["aui", "bootstrap-datepicker", "datatables", "jquery.fancybox.pack", "jquery", "tinymce-config", "seleccion-material", "rating"], function ($) {
     // Dependencies are loaded...
     // Execute code
 });
