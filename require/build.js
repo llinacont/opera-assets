@@ -10,6 +10,7 @@
         "tinymce-config": "../js/tiny-customs",
         "seleccion-material": "../js/seleccionMaterial",
         "rating": "../js/rating"
+        "yui-yahoo": "../js/vendor/yahoo-dom-event"
     },
     optimize: "none",
     name: "main",
