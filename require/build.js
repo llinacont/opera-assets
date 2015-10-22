@@ -10,7 +10,8 @@
         "jquery": "../js/vendor/jquery-1.11.1.min",
         "tinymce": "../js/vendor/tinymce.min",
         "seleccion-material": "../js/seleccionMaterial",
-        "rating": "../js/rating"
+        "rating": "../js/rating",
+        "require": "../js/vendor/require.min"
     },
     name: "main",
     out: "../dist/main.min.js"
