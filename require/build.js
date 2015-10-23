@@ -3,15 +3,18 @@
     paths: {
     	"aui": "../js/vendor/aui.min",
     	"bootstrap-datepicker": "../js/vendor/bootstrap-datepicker.min",
-    	"bootstrap-datepicker-es": "../js/vendor/bootstrap-datepicker.es.min",
     	"colpick": "../js/vendor/colpick",
         "datatables": "../js/vendor/datatables",
-        "jquery.fancybox.pack": "../js/vendor/jquery.fancybox.pack",
-        "jquery": "../js/vendor/jquery-1.11.1.min",
+        "jquery": "../js/vendor/jquery/jquery-1.11.1.min",
+        "jquery-fancybox": "../js/vendor/jquery/jquery.fancybox.pack",
         "tinymce-config": "../js/tiny-customs",
-        "seleccion-material": "../js/seleccionMaterial",
         "rating": "../js/rating",
-        "yui-yahoo": "../js/vendor/yahoo-dom-event"
+        "seleccion-material": "../js/seleccionMaterial",
+        "yui-animation": "../js/vendor/yui/animation-min",
+        "yui-dragdrop": "../js/vendor/yui/dragdrop-min",
+        "yui-dragdrop-custom": "../js/vendor/yui/dragdrop-custom",
+        "yui-utilities": "../js/vendor/yui/utilities",
+        "yui-yahoo": "../js/vendor/yui/yahoo-dom-event"
     },
     optimize: "none",
     name: "main",
