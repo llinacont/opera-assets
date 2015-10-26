@@ -8,6 +8,7 @@
         "jquery": "../js/vendor/jquery/jquery-1.11.1.min",
         "jquery-fancybox": "../js/vendor/jquery/jquery.fancybox.pack",
         "tinymce-config": "../js/tiny-customs",
+        "datepicker-config": "../js/datepicker-customs",
         "rating": "../js/rating",
         "seleccion-material": "../js/seleccionMaterial",
         "yui-animation": "../js/vendor/yui/animation-min",
