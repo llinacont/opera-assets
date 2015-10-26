@@ -3,11 +3,13 @@
     paths: {
     	"aui": "../js/vendor/aui.min",
     	"bootstrap-datepicker": "../js/vendor/bootstrap-datepicker.min",
+        "bootstrap-datepicker-es": "../js/vendor/bootstrap-datepicker.es.min",
     	"colpick": "../js/vendor/colpick",
         "datatables": "../js/vendor/datatables",
         "jquery": "../js/vendor/jquery/jquery-1.11.1.min",
         "jquery-fancybox": "../js/vendor/jquery/jquery.fancybox.pack",
-        "tinymce-config": "../js/tiny-customs",
+        "tinymce": "../js/vendor/tinymce.min",
+        "tinymce-config": "../js/vendor/tinymce.customs",
         "rating": "../js/rating",
         "seleccion-material": "../js/seleccionMaterial",
         "yui-animation": "../js/vendor/yui/animation-min",
@@ -18,5 +20,6 @@
     },
     optimize: "none",
     name: "main",
+    findNestedDependencies: true,
     out: "../dist/main.min.js"
 })
