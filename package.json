@@ -1,0 +1,25 @@
+{
+  "name": "opera-assets",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/llinacont/opera-assets.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/llinacont/opera-assets/issues"
+  },
+  "homepage": "https://github.com/llinacont/opera-assets",
+  "devDependencies": {
+    "gulp": "^3.9.0",
+    "gulp-concat": "^2.6.0",
+    "gulp-uglify": "^1.5.1",
+    "merge-stream": "^1.0.0"
+  }
+}
