@@ -23,10 +23,26 @@
 var gulp = require('gulp'),
   concat = require('gulp-concat'),
   uglify = require('gulp-uglify'),
-  merge = require('merge-stream');
+  merge = require('merge-stream'),
+  minifyCSS = require('gulp-minify-css'),
+  autoprefixer = require('gulp-autoprefixer');
+
+var AUTOPREFIXER_BROWSERS = [
+  'ie >= 10',
+  'ie_mob >= 10',
+  'ff >= 30',
+  'chrome >= 34',
+  'safari >= 7',
+  'opera >= 23',
+  'ios >= 7',
+  'android >= 4.4',
+  'bb >= 10'
+];
   
 
 // ***** Production build tasks ****** //
+
+gulp.task('default', ['js', 'css']);
 
 // Optimize Images
 /*
@@ -51,4 +67,13 @@ gulp.task('js', function() {
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/'))
+});
+
+// Compile CSS
+gulp.task('css', function(){
+  return gulp.src('css/**/*.css')
+  .pipe(minifyCSS({keepSpecialComments : 0}))
+  .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
+  .pipe(concat('main.min.css'))
+  .pipe(gulp.dest('dist/css/'))
 });
