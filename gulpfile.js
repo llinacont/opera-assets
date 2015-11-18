@@ -42,7 +42,7 @@ var AUTOPREFIXER_BROWSERS = [
 
 // ***** Production build tasks ****** //
 
-gulp.task('default', ['js', 'css']);
+gulp.task('default', ['js', 'css', 'fonts']);
 
 // Optimize Images
 /*
@@ -76,4 +76,10 @@ gulp.task('css', function(){
   .pipe(autoprefixer(AUTOPREFIXER_BROWSERS))
   .pipe(concat('main.min.css'))
   .pipe(gulp.dest('dist/css/'))
+});
+
+// Copy Fonts
+gulp.task('fonts', function() {
+    return gulp.src('fonts/*')
+    .pipe(gulp.dest('dist/fonts/'));
 });
