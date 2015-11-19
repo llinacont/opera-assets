@@ -42,28 +42,14 @@ var AUTOPREFIXER_BROWSERS = [
 
 // ***** Production build tasks ****** //
 
-gulp.task('default', ['js', 'css', 'fonts']);
-
-// Optimize Images
-/*
-gulp.task('images', function() {
-  return gulp.src('src/.{svg,png,jpg}')
-    .pipe($.flatten())
-    .pipe($.cache($.imagemin({
-      progressive: true,
-      interlaced: true
-    })))
-    .pipe(gulp.dest('dist/images'))
-    .pipe($.size({title: 'images'}));
-});
-*/
+gulp.task('default', ['js', 'css', 'fonts', 'images']);
 
 // Compile Javascript
 gulp.task('js', function() {
   var jquery = gulp.src('js/vendor/jquery*.js')
-  var js = gulp.src(['js/**/*.js', '!js/vendor/jquery*.js'])
-
-  return merge(js, jquery)
+  var moment = gulp.src('js/vendor/moment.js')
+  var js = gulp.src(['js/**/*.js', '!js/vendor/jquery*.js', '!js/vendor/moment.js'])
+  return merge(js, jquery, moment)
   .pipe(concat('main.min.js'))
   .pipe(uglify())
   .pipe(gulp.dest('dist/js/'))
@@ -82,4 +68,10 @@ gulp.task('css', function(){
 gulp.task('fonts', function() {
     return gulp.src('fonts/*')
     .pipe(gulp.dest('dist/fonts/'));
+});
+
+// Copy Images
+gulp.task('images', function() {
+  return gulp.src('images/**/*.{svg,png,jpg}')
+    .pipe(gulp.dest('dist/images'));
 });
