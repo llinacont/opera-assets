@@ -47,7 +47,7 @@ gulp.task('default', ['js', 'css', 'fonts', 'images']);
 // Compile Javascript
 gulp.task('js', function() {
   var jquery = gulp.src('js/vendor/jquery*.js')
-  var moment = gulp.src('js/vendor/moment.js')
+  var moment = gulp.src('js/vendor/moment.min.js')
   var js = gulp.src(['js/**/*.js', '!js/vendor/jquery*.js', '!js/vendor/moment.js'])
   return merge(js, jquery, moment)
   .pipe(concat('main.min.js'))
